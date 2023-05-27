@@ -27,7 +27,7 @@ public class HelloController {
     @GetMapping("/message")
     @ResponseBody
     public String getMessage() {
-        return "Message: " + properties.getMessage() + "\n" + "Message1: ";
+        return "Message: " + properties.getMessage() + "\n" + "Message1:" + properties.getMessage1();
     }
 
 }
