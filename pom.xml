@@ -33,15 +33,17 @@
 			<artifactId>spring-cloud-azure-appconfiguration-config-web</artifactId>
 			<version>4.7.0</version>
 		</dependency>
+		<!-- dependency for feature flag -->
 		<dependency>
 			<groupId>com.azure.spring</groupId>
 			<artifactId>spring-cloud-azure-feature-management-web</artifactId>
 			<version>4.7.0</version>
 		</dependency>
-		<!-- <dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
-		</dependency> -->
+		</dependency>
+		<!-- dependency for basic app configuration -->
 		<dependency>
 			<groupId>com.azure.spring</groupId>
 			<artifactId>spring-cloud-azure-appconfiguration-config</artifactId>
