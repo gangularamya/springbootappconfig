@@ -67,4 +67,4 @@ stages:
               azureSubscription: $(azureSubscription)
               appType: webAppLinux
               appName: $(webAppName)
-              package: '$(Pipeline.Workspace)/**/azure-0.0.1-SNAPSHOT.jar'
+              package: '$(Pipeline.Workspace)/**/appconfigsampleJava-0.0.1-SNAPSHOT.jar'
