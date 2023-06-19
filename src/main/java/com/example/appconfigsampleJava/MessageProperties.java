@@ -6,6 +6,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 public class MessageProperties {
     private String message;
     private String message1;
+    private String keyVaultMessage;
 
     public String getMessage() {
         return message;
@@ -21,6 +22,15 @@ public class MessageProperties {
 
     public String getMessage1() {
         return message1;
+    }
+
+    
+    public String getKeyVaultMessage() {
+        return keyVaultMessage;
+    }
+
+    public void setKeyVaultMessage(String keyVaultMessage) {
+        this.keyVaultMessage = keyVaultMessage;
     }
 
 
