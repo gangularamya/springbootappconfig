@@ -29,16 +29,16 @@ public class HelloController {
         return "Hello World!";
     }
 
-    // @GetMapping("/welcome")
-    // public String mainWithParam(Model model) {
-    //     model.addAttribute("Beta", featureManager.isEnabledAsync("Beta").block());
-    //     return "welcome";
-    // }
+    @GetMapping("/welcome")
+    public String mainWithParam(Model model) {
+        model.addAttribute("Beta", featureManager.isEnabledAsync("Beta").block());
+        return "welcome";
+    }
 
-    // @GetMapping("/message")
-    // @ResponseBody
-    // public String getMessage() {
-    //     return "Message: " + properties.getMessage() + "\n" + "Message1:" + properties.getMessage1();
-    // }
+    @GetMapping("/message")
+    @ResponseBody
+    public String getMessage() {
+        return "Message: " + properties.getMessage() + "\n" + "Message1:" + properties.getMessage1();
+    }
 
 }
