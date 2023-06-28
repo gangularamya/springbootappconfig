@@ -38,7 +38,7 @@ public class HelloController {
     @GetMapping("/message")
     @ResponseBody
     public String getMessage() {
-        return "Message: " + properties.getMessage() + "\n" + "Message1:" + properties.getMessage1()+ "\nKey Vault message: " + properties.getKeyVaultMessage();
+        return "Message: " + properties.getMessage() + "\nKey Vault message: " + properties.getKeyVaultMessage();
     }
 
 }
